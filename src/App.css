@@ -1,0 +1,245 @@
+.TopStrip {
+    display: flex;
+    background: #002147;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.TopStrip button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5em 0.8em;
+    border-radius: 0.8em;
+}
+
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    background: #000000;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.NavBar,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon {
+    border: 1px solid;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.MainContainer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 33, 71, 1) 77%);
+    color: white;
+    padding: 2em;
+    display: flex;
+}
+
+.left-div {
+    width: 30%;
+    padding-left: 6em;
+}
+
+.right-div {
+    width: 70%;
+    padding: 0 2em;
+}
+
+.left-div h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.left-div h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.left-para {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.left-div img {
+    width: 10%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+.btn-container button {
+    width: 100%;
+    padding: 0.8em 0;
+    border: 0;
+    border-radius: 0.5em;
+}
+
+.btn-shortlist {
+    background: rgb(0, 33, 71);
+    background: linear-gradient(90deg, rgba(0, 33, 71, 1) 0%, rgba(8, 103, 210, 1) 53%);
+    color: white;
+}
+
+.btn-call {
+    background: white;
+    color: #002147;
+}
+
+.left-div-btm {
+    font-size: 0.8em;
+    color: #5a7180;
+    margin-top: 2em;
+}
+
+.left-div-btm img {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.carousel-div {
+    box-shadow: 0 25px 65px 25px black;
+}
+
+.carousel-root {
+    height: 70vh;
+}
+
+.carousel.carousel-slider {
+    height: 100%;
+}
+
+.video-player {
+    height: 70vh;
+}
+
+@media screen and (max-width:62em) {
+    .TopStrip {
+        font-size: .8em;
+    }
+
+    .TopStrip button {
+        font-size: .8em;
+    }
+
+    .NavBar .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .NavBar nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        transition: 1s;
+        z-index: 2;
+        background: black;
+        opacity: 0.9;
+    }
+
+
+    .NavBar .nav_mobile {
+        transform: translateY(110vh);
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav a {
+        font-size: 1.5em;
+    }
+
+    .right-div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .carousel-root {
+        height: 30vh;
+    }
+
+    .MainContainer {
+        padding: 1em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .video-player {
+        height: 30vh;
+    }
+
+    .left-div {
+        padding: 0;
+        width: 100%;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .left-div h1 {
+        font-size: 2.5em;
+    }
+
+    .left-div h3 {
+        font-size: 1.2em;
+    }
+
+    .left-para {
+        justify-content: center;
+    }
+
+    .btn-container {
+        align-items: center;
+    }
+
+    .left-div-btm {
+        font-size: .7em;
+    }
+}
